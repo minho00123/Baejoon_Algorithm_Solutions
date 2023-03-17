@@ -1,1 +1,1 @@
-# Baejoon_Algorithm_Solutions
+# Baekjoon_Algorithm_Solutions
