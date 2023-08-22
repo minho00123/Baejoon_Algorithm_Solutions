@@ -11,7 +11,6 @@ function solution(score) {
     const set = new Set(sortedAverage);
     const setAverage = [...set]
     
-    console.log(average);
     let rank = 1;
     const answer = [];
     for (let i = 0; i < setAverage.length; i++) {
