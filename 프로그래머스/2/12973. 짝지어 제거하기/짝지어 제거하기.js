@@ -1,15 +1,14 @@
 function solution(s)
 {
-    const arr = s.split("");
-    const result = [];
-    
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === result[result.length - 1]) {
-            result.pop();
+    const stack = [];
+
+    for (const c of s) {
+        if (stack.length > 0 && stack[stack.length - 1] === c) {
+            stack.pop();
         } else {
-            result.push(arr[i]);
+            stack.push(c);
         }
     }
     
-    return result.length === 0 ? 1 : 0;
+    return stack.length === 0 ? 1 : 0;
 }
